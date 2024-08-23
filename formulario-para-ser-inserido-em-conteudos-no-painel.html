@@ -1,0 +1,38 @@
+<div style="text-align: center;"><meta charset="utf-8" /><strong>Preencha seus dados no formul&aacute;rio abaixo para avalia&ccedil;&atilde;o de cadastro.</strong> Nossa equipe entrar&aacute; em contato para maiores informa&ccedil;&otilde;es. Somente representantes habilitados tem permiss&atilde;o para solicitar cota&ccedil;&atilde;o em nosso site.</div>
+&nbsp;
+
+<form action="/Estaticas/EnviaFormularioGenerico" class="relative">
+<div class="flex justify-center gap-6 radio-options">
+<div class="relative flex items-center font-medium py-4"><span class="radio-custom relative cursor-pointer w-5 h-5 rounded-full border border-gray mr-2 active">&nbsp;</span> <input checked="checked" class="hidden" name="Pessoa" type="radio" value="Pessoa física" /> Pessoa f&iacute;sica</div>
+
+<div class="relative flex items-center font-medium py-4"><span class="radio-custom relative cursor-pointer w-5 h-5 rounded-full border border-gray mr-2">&nbsp;</span> <input class="hidden" name="Pessoa" type="radio" value="Pessoa jurídica" /> Pessoa jur&iacute;dica</div>
+</div>
+
+<div class="bg-secondarylight2 relative px-4 md:px-6 py-6 md:rounded-lg overflow-hidden -ml-[21px] w-[calc(100%+42px)] md:w-full md:ml-0">
+<div class="md:grid grid-cols-2 md:gap-5">
+<div class="forminline mb-4"><label class="block w-full px-3 font-semibold py-1" for="Nome">Nome completo*</label> <input class="input wide" id="Nome" name="Nome" placeholder="Insira seu nome e sobrenome" required="" tabindex="1" type="text" /></div>
+
+<div class="forminline mb-4"><label class="block w-full px-3 font-semibold py-1" for="Email">E-mail*</label> <input class="input normal" id="Email" name="Email" placeholder="Insira seu e-mail" reqauired="" tabindex="2" type="text" /></div>
+</div>
+
+<div class="md:grid grid-cols-2 md:gap-4">
+<div class="forminline mb-4"><label class="block w-full px-3 font-semibold py-1" for="NomeEmpresa">Nome da empresa*</label> <input class="input normal" id="NomeEmpresa" name="NomeEmpresa" placeholder="Insira o nome da sua empresa" required="" tabindex="3" type="text" /></div>
+
+<div class="forminline mb-4"><label class="block w-full px-3 font-semibold py-1" for="cnpj">CNPJ*</label> <input class="input normal numerocnpj" id="cnpj" name="cnpj" placeholder="00.000.000/0000-00" required="" tabindex="3" type="text" /></div>
+</div>
+
+<div class="md:grid grid-cols-2 md:gap-4">
+<div class="forminline mb-4"><label class="block w-full px-3 font-semibold py-1" for="NomeEmpresa">Estado*</label> <select id="Estado" name="Estado" required=""><option selected="selected" value="Selecione">Selecione</option><option value="AC">AC</option><option value="AL">AL</option><option value="AP">AP</option><option value="AM">AM</option><option value="BA">BA</option><option value="CE">CE</option><option value="ES">ES</option><option value="GO">GO</option><option value="MA">MA</option><option value="MT">MT</option><option value="MS">MS</option><option value="MG">MG</option><option value="PA">PA</option><option value="PB">PB</option><option value="PR">PR</option><option value="PE">PE</option><option value="PI">PI</option><option value="RJ">RJ</option><option value="RN">RN</option><option value="RS">RS</option><option value="RO">RO</option><option value="RR">RR</option><option value="SC">SC</option><option value="SP">SP</option><option value="SE">SE</option><option value="TO">TO</option><option value="DF">DF</option> </select></div>
+
+<div class="forminline mb-4"><label class="block w-full px-3 font-semibold py-1" for="Telefone">Telefone*</label> <input class="input normal numeroTelefone" id="telefone" name="Telefone" placeholder="(00) 0.0000-0000" required="" tabindex="3" type="text" /></div>
+</div>
+
+<div class="forminline mb-4"><label class="block w-full px-3 font-semibold py-1" for="Assunto">Assunto*</label> <input class="input normal numeroTelefone" id="assunto" name="Assunto" placeholder="Sobre o que é a mensagem?" required="" tabindex="3" type="text" /></div>
+
+<div class="forminline mb-4"><label class="block w-full px-3 font-semibold py-1" for="Mensagem">Mensagem*</label><textarea class="textarea inputAvaliacao" cols="20" id="Mensagem" name="Mensagem" placeholder="Como podemos te ajudar?" required="" rows="5" tabindex="4" wrap="virtual"></textarea></div>
+ 
+<div class="flex justify-center w-full"><input class="rounded-full mt-2 py-2 bg-btns hover-btn-default transition-all w-64 text-white font-medium cursor-pointer" id="btnSejaNossoFornecedor" name="btnSejaNossoFornecedor" type="submit" value="Enviar mensagem" /></div>
+</div>
+</form>
+
+<p class="roda-form">&nbsp;</p>
